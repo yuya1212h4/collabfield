@@ -1,16 +1,7 @@
 nav.navbar.navbar-default.navbar-fixed-top
   .container
-    / ブランド表示と、モバイル表示切り替え用のグループ化
-    .navbar-header
-      button[type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      = link_to "collabfield", root_path, class:"navbar-brand"
-
-    / ナビゲーションリンク/フォームなどのコンテンツをここにまとめて表示をオンオフできるようにする
-    .collapse.navbar-collapse#bs-example-navbar-collapse-1
-      ul.nav.navbar-nav
-
-      ul.nav.navbar-nav.navbar-right
+    .row
+      .col-sm-7
+        = render 'layouts/navigation/header'
+      .col-sm-5
+        = render 'layouts/navigation/collapsible_elements'
