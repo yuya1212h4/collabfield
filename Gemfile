@@ -45,6 +45,13 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+  gem 'headless'
+  # gem 'capybara' Rails 5.1以降は標準で入っている
+  gem 'poltergeist'
+  # gem 'database_cleaner' Rails 5.1以降は不必要となった
 end
 
 group :development do
