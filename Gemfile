@@ -51,7 +51,7 @@ group :development, :test do
   gem 'headless'
   # gem 'capybara' Rails 5.1以降は標準で入っている
   gem 'poltergeist'
-  # gem 'database_cleaner' Rails 5.1以降は不必要となった
+  gem 'database_cleaner' #これは必要だった
 end
 
 group :development do
