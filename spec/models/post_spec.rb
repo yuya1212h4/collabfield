@@ -12,4 +12,13 @@ RSpec.describe Post, type: :model do
       expect(association).to eq :belongs_to
     end
   end
+
+  context "Scopes" do
+    it "default_scope orders by descending created_at" do
+      # created_atが同時になっているために、指定してずらした
+      first_post = create(:post, created_at: "2018-08-18 01:26:50")
+      second_post = create(:post, created_at: "2018-08-18 01:26:51")
+      expect(Post.all).to eq [second_post, first_post]
+    end
+  end
 end
