@@ -1,5 +1,5 @@
 class Private::Message < ApplicationRecord
-  self.table_naem = 'private_messages'
+  self.table_name = 'private_messages'
 
   belongs_to :user
   belongs_to :conversation,
