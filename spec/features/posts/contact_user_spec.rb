@@ -18,7 +18,7 @@ RSpec.feature "Contact user", :type => :feature do
       find('form .send-message-to-user').trigger('click')
 
       expect(page).not_to have_selector('.contact-user form')
-      expect(page).to have_selector('.contacted-user',
+      expect(page).to have_selector('.contacte-user',
                                       text: 'Message has been sent')
     end
 
